@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "e96eab3a-e64d-4e43-b557-b8186de827e8",
+		"name": "API-5 - Добавление игры в \"список желаемого\" юзера",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31728454"
+	},
+	"item": [
+		{
+			"name": "настройки/сброс",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IldGZlRBQ0hzYUhvQ3VML1MiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzE4OTc4NjA1LCJpYXQiOjE3MTgzNzg2MDUsImlzcyI6Imh0dHBzOi8vbXlrb3RxYm9ja3p2emFjY2N1Ynouc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImU0ZTRmYjBkLWVmNmItNGE2My1hY2U1LWNmNTA1MGRmZmE2MSIsImVtYWlsIjoiZGVtZXRyaW9zLnRlc3RlckBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8xNTI2Mzg4MTI_dj00IiwiZW1haWwiOiJkZW1ldHJpb3MudGVzdGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJEbWl0cmlpIFBlbGlob3YiLCJpc3MiOiJodHRwczovL2FwaS5naXRodWIuY29tIiwibmFtZSI6IkRtaXRyaWkgUGVsaWhvdiIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiRGVtZXRyaW9zMjYiLCJwcm92aWRlcl9pZCI6IjE1MjYzODgxMiIsInN1YiI6IjE1MjYzODgxMiIsInVzZXJfbmFtZSI6IkRlbWV0cmlvczI2In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib2F1dGgiLCJ0aW1lc3RhbXAiOjE3MTgzNzg2MDV9XSwic2Vzc2lvbl9pZCI6IjlhZWMxZWU3LWU2YzYtNDE4MS1hMzQ0LTlkZmQ4NjU5N2VlZCIsImlzX2Fub255bW91cyI6ZmFsc2V9.HLFjadzPLI1SZvu5qscm7XugDY7RkSmTxxnhXedb41g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Task-Id",
+						"value": "API-5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-gs.qa-playground.com/api/v1/setup",
+					"protocol": "https",
+					"host": [
+						"dev-gs",
+						"qa-playground",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"setup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "получение списка пользователей",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IldGZlRBQ0hzYUhvQ3VML1MiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzE4OTc4NjA1LCJpYXQiOjE3MTgzNzg2MDUsImlzcyI6Imh0dHBzOi8vbXlrb3RxYm9ja3p2emFjY2N1Ynouc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImU0ZTRmYjBkLWVmNmItNGE2My1hY2U1LWNmNTA1MGRmZmE2MSIsImVtYWlsIjoiZGVtZXRyaW9zLnRlc3RlckBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8xNTI2Mzg4MTI_dj00IiwiZW1haWwiOiJkZW1ldHJpb3MudGVzdGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJEbWl0cmlpIFBlbGlob3YiLCJpc3MiOiJodHRwczovL2FwaS5naXRodWIuY29tIiwibmFtZSI6IkRtaXRyaWkgUGVsaWhvdiIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiRGVtZXRyaW9zMjYiLCJwcm92aWRlcl9pZCI6IjE1MjYzODgxMiIsInN1YiI6IjE1MjYzODgxMiIsInVzZXJfbmFtZSI6IkRlbWV0cmlvczI2In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib2F1dGgiLCJ0aW1lc3RhbXAiOjE3MTgzNzg2MDV9XSwic2Vzc2lvbl9pZCI6IjlhZWMxZWU3LWU2YzYtNDE4MS1hMzQ0LTlkZmQ4NjU5N2VlZCIsImlzX2Fub255bW91cyI6ZmFsc2V9.HLFjadzPLI1SZvu5qscm7XugDY7RkSmTxxnhXedb41g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Task-Id",
+						"value": "API-5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-gs.qa-playground.com/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"dev-gs",
+						"qa-playground",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "получение списка игр",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IldGZlRBQ0hzYUhvQ3VML1MiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzE4OTc4NjA1LCJpYXQiOjE3MTgzNzg2MDUsImlzcyI6Imh0dHBzOi8vbXlrb3RxYm9ja3p2emFjY2N1Ynouc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImU0ZTRmYjBkLWVmNmItNGE2My1hY2U1LWNmNTA1MGRmZmE2MSIsImVtYWlsIjoiZGVtZXRyaW9zLnRlc3RlckBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8xNTI2Mzg4MTI_dj00IiwiZW1haWwiOiJkZW1ldHJpb3MudGVzdGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJEbWl0cmlpIFBlbGlob3YiLCJpc3MiOiJodHRwczovL2FwaS5naXRodWIuY29tIiwibmFtZSI6IkRtaXRyaWkgUGVsaWhvdiIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiRGVtZXRyaW9zMjYiLCJwcm92aWRlcl9pZCI6IjE1MjYzODgxMiIsInN1YiI6IjE1MjYzODgxMiIsInVzZXJfbmFtZSI6IkRlbWV0cmlvczI2In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib2F1dGgiLCJ0aW1lc3RhbXAiOjE3MTgzNzg2MDV9XSwic2Vzc2lvbl9pZCI6IjlhZWMxZWU3LWU2YzYtNDE4MS1hMzQ0LTlkZmQ4NjU5N2VlZCIsImlzX2Fub255bW91cyI6ZmFsc2V9.HLFjadzPLI1SZvu5qscm7XugDY7RkSmTxxnhXedb41g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Task-Id",
+						"value": "API-5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://dev-gs.qa-playground.com/api/v1/games",
+					"protocol": "https",
+					"host": [
+						"dev-gs",
+						"qa-playground",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "добавление игры в \"список желаемого\" юзера(bug)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IldGZlRBQ0hzYUhvQ3VML1MiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzE4OTc4NjA1LCJpYXQiOjE3MTgzNzg2MDUsImlzcyI6Imh0dHBzOi8vbXlrb3RxYm9ja3p2emFjY2N1Ynouc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImU0ZTRmYjBkLWVmNmItNGE2My1hY2U1LWNmNTA1MGRmZmE2MSIsImVtYWlsIjoiZGVtZXRyaW9zLnRlc3RlckBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8xNTI2Mzg4MTI_dj00IiwiZW1haWwiOiJkZW1ldHJpb3MudGVzdGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJEbWl0cmlpIFBlbGlob3YiLCJpc3MiOiJodHRwczovL2FwaS5naXRodWIuY29tIiwibmFtZSI6IkRtaXRyaWkgUGVsaWhvdiIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiRGVtZXRyaW9zMjYiLCJwcm92aWRlcl9pZCI6IjE1MjYzODgxMiIsInN1YiI6IjE1MjYzODgxMiIsInVzZXJfbmFtZSI6IkRlbWV0cmlvczI2In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib2F1dGgiLCJ0aW1lc3RhbXAiOjE3MTgzNzg2MDV9XSwic2Vzc2lvbl9pZCI6IjlhZWMxZWU3LWU2YzYtNDE4MS1hMzQ0LTlkZmQ4NjU5N2VlZCIsImlzX2Fub255bW91cyI6ZmFsc2V9.HLFjadzPLI1SZvu5qscm7XugDY7RkSmTxxnhXedb41g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Task-Id",
+						"value": "API-5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item_uuid\": \"1990ecdd-4d3d-4de2-91b9-d45d794c82bc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev-gs.qa-playground.com/api/v1/users/a9c20874-a84f-4953-9ec3-6be2790e8edd/wishlist/add",
+					"protocol": "https",
+					"host": [
+						"dev-gs",
+						"qa-playground",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"a9c20874-a84f-4953-9ec3-6be2790e8edd",
+						"wishlist",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "добавление игры в \"список желаемого\" юзера(fix)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IldGZlRBQ0hzYUhvQ3VML1MiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzE4OTc4NjA1LCJpYXQiOjE3MTgzNzg2MDUsImlzcyI6Imh0dHBzOi8vbXlrb3RxYm9ja3p2emFjY2N1Ynouc3VwYWJhc2UuY28vYXV0aC92MSIsInN1YiI6ImU0ZTRmYjBkLWVmNmItNGE2My1hY2U1LWNmNTA1MGRmZmE2MSIsImVtYWlsIjoiZGVtZXRyaW9zLnRlc3RlckBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8xNTI2Mzg4MTI_dj00IiwiZW1haWwiOiJkZW1ldHJpb3MudGVzdGVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJEbWl0cmlpIFBlbGlob3YiLCJpc3MiOiJodHRwczovL2FwaS5naXRodWIuY29tIiwibmFtZSI6IkRtaXRyaWkgUGVsaWhvdiIsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiRGVtZXRyaW9zMjYiLCJwcm92aWRlcl9pZCI6IjE1MjYzODgxMiIsInN1YiI6IjE1MjYzODgxMiIsInVzZXJfbmFtZSI6IkRlbWV0cmlvczI2In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib2F1dGgiLCJ0aW1lc3RhbXAiOjE3MTgzNzg2MDV9XSwic2Vzc2lvbl9pZCI6IjlhZWMxZWU3LWU2YzYtNDE4MS1hMzQ0LTlkZmQ4NjU5N2VlZCIsImlzX2Fub255bW91cyI6ZmFsc2V9.HLFjadzPLI1SZvu5qscm7XugDY7RkSmTxxnhXedb41g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Task-Id",
+						"value": "API-5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item_uuid\": \"1990ecdd-4d3d-4de2-91b9-d45d794c82bc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://release-gs.qa-playground.com/api/v1/users/a9c20874-a84f-4953-9ec3-6be2790e8edd/wishlist/add",
+					"protocol": "https",
+					"host": [
+						"release-gs",
+						"qa-playground",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"a9c20874-a84f-4953-9ec3-6be2790e8edd",
+						"wishlist",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
