@@ -1,1 +1,1 @@
-# QA-Playground-Test-API
+# Тестирование API на площадке QAPlayground
